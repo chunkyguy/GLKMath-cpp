@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		196F29BF163A16470007D92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29BE163A16470007D92B /* UIKit.framework */; };
+		196F29C1163A16470007D92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C0163A16470007D92B /* Foundation.framework */; };
+		196F29C3163A16470007D92B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C2163A16470007D92B /* CoreGraphics.framework */; };
+		196F29C5163A16470007D92B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C4163A16470007D92B /* GLKit.framework */; };
+		196F29C7163A16470007D92B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C6163A16470007D92B /* OpenGLES.framework */; };
+		196F29CD163A16470007D92B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196F29CB163A16470007D92B /* InfoPlist.strings */; };
+		196F29CF163A16470007D92B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29CE163A16470007D92B /* main.m */; };
+		196F29D3163A16470007D92B /* WLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29D2163A16470007D92B /* WLAppDelegate.m */; };
+		196F29D5163A16470007D92B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 196F29D4163A16470007D92B /* Default.png */; };
+		196F29D7163A16470007D92B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 196F29D6163A16470007D92B /* Default@2x.png */; };
+		196F29D9163A16470007D92B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 196F29D8163A16470007D92B /* Default-568h@2x.png */; };
+		196F29DB163A16470007D92B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 196F29DA163A16470007D92B /* Shader.fsh */; };
+		196F29DD163A16470007D92B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 196F29DC163A16470007D92B /* Shader.vsh */; };
+		196F29E0163A16470007D92B /* WLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29DF163A16470007D92B /* WLViewController.m */; };
+		196F29E3163A16470007D92B /* WLViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196F29E1163A16470007D92B /* WLViewController_iPhone.xib */; };
+		196F29E6163A16470007D92B /* WLViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196F29E4163A16470007D92B /* WLViewController_iPad.xib */; };
+		196F29EE163A16480007D92B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29ED163A16480007D92B /* SenTestingKit.framework */; };
+		196F29EF163A16480007D92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29BE163A16470007D92B /* UIKit.framework */; };
+		196F29F0163A16480007D92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C0163A16470007D92B /* Foundation.framework */; };
+		196F29F8163A16480007D92B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196F29F6163A16480007D92B /* InfoPlist.strings */; };
+		196F29FB163A16480007D92B /* GLKMath_cppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29FA163A16480007D92B /* GLKMath_cppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		196F29F1163A16480007D92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 196F29B1163A16470007D92B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 196F29B9163A16470007D92B;
+			remoteInfo = "GLKMath-cpp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		196F29BA163A16470007D92B /* GLKMath-cpp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GLKMath-cpp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		196F29BE163A16470007D92B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		196F29C0163A16470007D92B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		196F29C2163A16470007D92B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		196F29C4163A16470007D92B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		196F29C6163A16470007D92B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		196F29CA163A16470007D92B /* GLKMath-cpp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKMath-cpp-Info.plist"; sourceTree = "<group>"; };
+		196F29CC163A16470007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		196F29CE163A16470007D92B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		196F29D0163A16470007D92B /* GLKMath-cpp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLKMath-cpp-Prefix.pch"; sourceTree = "<group>"; };
+		196F29D1163A16470007D92B /* WLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAppDelegate.h; sourceTree = "<group>"; };
+		196F29D2163A16470007D92B /* WLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAppDelegate.m; sourceTree = "<group>"; };
+		196F29D4163A16470007D92B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		196F29D6163A16470007D92B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		196F29D8163A16470007D92B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		196F29DA163A16470007D92B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		196F29DC163A16470007D92B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		196F29DE163A16470007D92B /* WLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLViewController.h; sourceTree = "<group>"; };
+		196F29DF163A16470007D92B /* WLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLViewController.m; sourceTree = "<group>"; };
+		196F29E2163A16470007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLViewController_iPhone.xib; sourceTree = "<group>"; };
+		196F29E5163A16470007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLViewController_iPad.xib; sourceTree = "<group>"; };
+		196F29EC163A16480007D92B /* GLKMath-cppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLKMath-cppTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		196F29ED163A16480007D92B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		196F29F5163A16480007D92B /* GLKMath-cppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKMath-cppTests-Info.plist"; sourceTree = "<group>"; };
+		196F29F7163A16480007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		196F29F9163A16480007D92B /* GLKMath_cppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKMath_cppTests.h; sourceTree = "<group>"; };
+		196F29FA163A16480007D92B /* GLKMath_cppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKMath_cppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		196F29B7163A16470007D92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F29BF163A16470007D92B /* UIKit.framework in Frameworks */,
+				196F29C1163A16470007D92B /* Foundation.framework in Frameworks */,
+				196F29C3163A16470007D92B /* CoreGraphics.framework in Frameworks */,
+				196F29C5163A16470007D92B /* GLKit.framework in Frameworks */,
+				196F29C7163A16470007D92B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F29E8163A16480007D92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F29EE163A16480007D92B /* SenTestingKit.framework in Frameworks */,
+				196F29EF163A16480007D92B /* UIKit.framework in Frameworks */,
+				196F29F0163A16480007D92B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		196F29AF163A16470007D92B = {
+			isa = PBXGroup;
+			children = (
+				196F29C8163A16470007D92B /* GLKMath-cpp */,
+				196F29F3163A16480007D92B /* GLKMath-cppTests */,
+				196F29BD163A16470007D92B /* Frameworks */,
+				196F29BB163A16470007D92B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		196F29BB163A16470007D92B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				196F29BA163A16470007D92B /* GLKMath-cpp.app */,
+				196F29EC163A16480007D92B /* GLKMath-cppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		196F29BD163A16470007D92B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				196F29BE163A16470007D92B /* UIKit.framework */,
+				196F29C0163A16470007D92B /* Foundation.framework */,
+				196F29C2163A16470007D92B /* CoreGraphics.framework */,
+				196F29C4163A16470007D92B /* GLKit.framework */,
+				196F29C6163A16470007D92B /* OpenGLES.framework */,
+				196F29ED163A16480007D92B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		196F29C8163A16470007D92B /* GLKMath-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				196F29D1163A16470007D92B /* WLAppDelegate.h */,
+				196F29D2163A16470007D92B /* WLAppDelegate.m */,
+				196F29DA163A16470007D92B /* Shader.fsh */,
+				196F29DC163A16470007D92B /* Shader.vsh */,
+				196F29DE163A16470007D92B /* WLViewController.h */,
+				196F29DF163A16470007D92B /* WLViewController.m */,
+				196F29E1163A16470007D92B /* WLViewController_iPhone.xib */,
+				196F29E4163A16470007D92B /* WLViewController_iPad.xib */,
+				196F29C9163A16470007D92B /* Supporting Files */,
+			);
+			path = "GLKMath-cpp";
+			sourceTree = "<group>";
+		};
+		196F29C9163A16470007D92B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				196F29CA163A16470007D92B /* GLKMath-cpp-Info.plist */,
+				196F29CB163A16470007D92B /* InfoPlist.strings */,
+				196F29CE163A16470007D92B /* main.m */,
+				196F29D0163A16470007D92B /* GLKMath-cpp-Prefix.pch */,
+				196F29D4163A16470007D92B /* Default.png */,
+				196F29D6163A16470007D92B /* Default@2x.png */,
+				196F29D8163A16470007D92B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		196F29F3163A16480007D92B /* GLKMath-cppTests */ = {
+			isa = PBXGroup;
+			children = (
+				196F29F9163A16480007D92B /* GLKMath_cppTests.h */,
+				196F29FA163A16480007D92B /* GLKMath_cppTests.m */,
+				196F29F4163A16480007D92B /* Supporting Files */,
+			);
+			path = "GLKMath-cppTests";
+			sourceTree = "<group>";
+		};
+		196F29F4163A16480007D92B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				196F29F5163A16480007D92B /* GLKMath-cppTests-Info.plist */,
+				196F29F6163A16480007D92B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		196F29B9163A16470007D92B /* GLKMath-cpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196F29FE163A16480007D92B /* Build configuration list for PBXNativeTarget "GLKMath-cpp" */;
+			buildPhases = (
+				196F29B6163A16470007D92B /* Sources */,
+				196F29B7163A16470007D92B /* Frameworks */,
+				196F29B8163A16470007D92B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GLKMath-cpp";
+			productName = "GLKMath-cpp";
+			productReference = 196F29BA163A16470007D92B /* GLKMath-cpp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		196F29EB163A16480007D92B /* GLKMath-cppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196F2A01163A16480007D92B /* Build configuration list for PBXNativeTarget "GLKMath-cppTests" */;
+			buildPhases = (
+				196F29E7163A16480007D92B /* Sources */,
+				196F29E8163A16480007D92B /* Frameworks */,
+				196F29E9163A16480007D92B /* Resources */,
+				196F29EA163A16480007D92B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				196F29F2163A16480007D92B /* PBXTargetDependency */,
+			);
+			name = "GLKMath-cppTests";
+			productName = "GLKMath-cppTests";
+			productReference = 196F29EC163A16480007D92B /* GLKMath-cppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		196F29B1163A16470007D92B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WL;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = whackylabs;
+			};
+			buildConfigurationList = 196F29B4163A16470007D92B /* Build configuration list for PBXProject "GLKMath-cpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 196F29AF163A16470007D92B;
+			productRefGroup = 196F29BB163A16470007D92B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				196F29B9163A16470007D92B /* GLKMath-cpp */,
+				196F29EB163A16480007D92B /* GLKMath-cppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		196F29B8163A16470007D92B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F29CD163A16470007D92B /* InfoPlist.strings in Resources */,
+				196F29D5163A16470007D92B /* Default.png in Resources */,
+				196F29D7163A16470007D92B /* Default@2x.png in Resources */,
+				196F29D9163A16470007D92B /* Default-568h@2x.png in Resources */,
+				196F29DB163A16470007D92B /* Shader.fsh in Resources */,
+				196F29DD163A16470007D92B /* Shader.vsh in Resources */,
+				196F29E3163A16470007D92B /* WLViewController_iPhone.xib in Resources */,
+				196F29E6163A16470007D92B /* WLViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F29E9163A16480007D92B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F29F8163A16480007D92B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196F29EA163A16480007D92B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		196F29B6163A16470007D92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F29CF163A16470007D92B /* main.m in Sources */,
+				196F29D3163A16470007D92B /* WLAppDelegate.m in Sources */,
+				196F29E0163A16470007D92B /* WLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F29E7163A16480007D92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F29FB163A16480007D92B /* GLKMath_cppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		196F29F2163A16480007D92B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 196F29B9163A16470007D92B /* GLKMath-cpp */;
+			targetProxy = 196F29F1163A16480007D92B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		196F29CB163A16470007D92B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				196F29CC163A16470007D92B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		196F29E1163A16470007D92B /* WLViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				196F29E2163A16470007D92B /* en */,
+			);
+			name = WLViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		196F29E4163A16470007D92B /* WLViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				196F29E5163A16470007D92B /* en */,
+			);
+			name = WLViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		196F29F6163A16480007D92B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				196F29F7163A16480007D92B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		196F29FC163A16480007D92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		196F29FD163A16480007D92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		196F29FF163A16480007D92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
+				INFOPLIST_FILE = "GLKMath-cpp/GLKMath-cpp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		196F2A00163A16480007D92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
+				INFOPLIST_FILE = "GLKMath-cpp/GLKMath-cpp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		196F2A02163A16480007D92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLKMath-cpp.app/GLKMath-cpp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
+				INFOPLIST_FILE = "GLKMath-cppTests/GLKMath-cppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		196F2A03163A16480007D92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLKMath-cpp.app/GLKMath-cpp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
+				INFOPLIST_FILE = "GLKMath-cppTests/GLKMath-cppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		196F29B4163A16470007D92B /* Build configuration list for PBXProject "GLKMath-cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F29FC163A16480007D92B /* Debug */,
+				196F29FD163A16480007D92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		196F29FE163A16480007D92B /* Build configuration list for PBXNativeTarget "GLKMath-cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F29FF163A16480007D92B /* Debug */,
+				196F2A00163A16480007D92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		196F2A01163A16480007D92B /* Build configuration list for PBXNativeTarget "GLKMath-cppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F2A02163A16480007D92B /* Debug */,
+				196F2A03163A16480007D92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 196F29B1163A16470007D92B /* Project object */;
+}
