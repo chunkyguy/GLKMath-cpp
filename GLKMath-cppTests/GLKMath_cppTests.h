@@ -7,7 +7,11 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "vec2.h"
 
-@interface GLKMath_cppTests : SenTestCase
-
+@interface GLKMath_cppTests : SenTestCase{
+    vec2 *v2_0;
+    vec2 *v2_1;
+    vec2 *v2_2;
+}
 @end
