@@ -407,6 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
 				INFOPLIST_FILE = "GLKMath-cpp/GLKMath-cpp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
 				INFOPLIST_FILE = "GLKMath-cpp/GLKMath-cpp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,6 +478,7 @@
 				196F2A00163A16480007D92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		196F2A01163A16480007D92B /* Build configuration list for PBXNativeTarget "GLKMath-cppTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +487,7 @@
 				196F2A03163A16480007D92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
