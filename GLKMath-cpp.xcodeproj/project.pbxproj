@@ -14,18 +14,18 @@
 		196F29C7163A16470007D92B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C6163A16470007D92B /* OpenGLES.framework */; };
 		196F29CD163A16470007D92B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196F29CB163A16470007D92B /* InfoPlist.strings */; };
 		196F29CF163A16470007D92B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29CE163A16470007D92B /* main.m */; };
-		196F29D3163A16470007D92B /* WLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 196F29D2163A16470007D92B /* WLAppDelegate.mm */; };
 		196F29D5163A16470007D92B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 196F29D4163A16470007D92B /* Default.png */; };
 		196F29D7163A16470007D92B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 196F29D6163A16470007D92B /* Default@2x.png */; };
 		196F29D9163A16470007D92B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 196F29D8163A16470007D92B /* Default-568h@2x.png */; };
 		196F29DB163A16470007D92B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 196F29DA163A16470007D92B /* Shader.fsh */; };
 		196F29DD163A16470007D92B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 196F29DC163A16470007D92B /* Shader.vsh */; };
-		196F29E0163A16470007D92B /* WLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 196F29DF163A16470007D92B /* WLViewController.mm */; };
 		196F29EE163A16480007D92B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29ED163A16480007D92B /* SenTestingKit.framework */; };
 		196F29EF163A16480007D92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29BE163A16470007D92B /* UIKit.framework */; };
 		196F29F0163A16480007D92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C0163A16470007D92B /* Foundation.framework */; };
 		196F29F8163A16480007D92B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196F29F6163A16480007D92B /* InfoPlist.strings */; };
 		196F29FB163A16480007D92B /* GLKMath_cppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29FA163A16480007D92B /* GLKMath_cppTests.m */; };
+		6586CA3E163F476100938628 /* WLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3D163F476100938628 /* WLViewController.mm */; };
+		6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3F163F476B00938628 /* WLAppDelegate.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,20 +50,20 @@
 		196F29CE163A16470007D92B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		196F29D0163A16470007D92B /* GLKMath-cpp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLKMath-cpp-Prefix.pch"; sourceTree = "<group>"; };
 		196F29D1163A16470007D92B /* WLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAppDelegate.h; sourceTree = "<group>"; };
-		196F29D2163A16470007D92B /* WLAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 		196F29D4163A16470007D92B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		196F29D6163A16470007D92B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		196F29D8163A16470007D92B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		196F29DA163A16470007D92B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		196F29DC163A16470007D92B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		196F29DE163A16470007D92B /* WLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLViewController.h; sourceTree = "<group>"; };
-		196F29DF163A16470007D92B /* WLViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WLViewController.mm; sourceTree = "<group>"; };
 		196F29EC163A16480007D92B /* GLKMath-cppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLKMath-cppTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		196F29ED163A16480007D92B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		196F29F5163A16480007D92B /* GLKMath-cppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKMath-cppTests-Info.plist"; sourceTree = "<group>"; };
 		196F29F7163A16480007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		196F29F9163A16480007D92B /* GLKMath_cppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKMath_cppTests.h; sourceTree = "<group>"; };
 		196F29FA163A16480007D92B /* GLKMath_cppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKMath_cppTests.m; sourceTree = "<group>"; };
+		6586CA3D163F476100938628 /* WLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLViewController.mm; sourceTree = "<group>"; };
+		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +127,12 @@
 		196F29C8163A16470007D92B /* GLKMath-cpp */ = {
 			isa = PBXGroup;
 			children = (
-				196F29D1163A16470007D92B /* WLAppDelegate.h */,
-				196F29D2163A16470007D92B /* WLAppDelegate.mm */,
 				196F29DA163A16470007D92B /* Shader.fsh */,
 				196F29DC163A16470007D92B /* Shader.vsh */,
+				196F29D1163A16470007D92B /* WLAppDelegate.h */,
+				6586CA3F163F476B00938628 /* WLAppDelegate.mm */,
 				196F29DE163A16470007D92B /* WLViewController.h */,
-				196F29DF163A16470007D92B /* WLViewController.mm */,
+				6586CA3D163F476100938628 /* WLViewController.mm */,
 				196F29C9163A16470007D92B /* Supporting Files */,
 			);
 			path = "GLKMath-cpp";
@@ -284,8 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				196F29CF163A16470007D92B /* main.m in Sources */,
-				196F29D3163A16470007D92B /* WLAppDelegate.mm in Sources */,
-				196F29E0163A16470007D92B /* WLViewController.mm in Sources */,
+				6586CA3E163F476100938628 /* WLViewController.mm in Sources */,
+				6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +383,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
 				INFOPLIST_FILE = "GLKMath-cpp/GLKMath-cpp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,7 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLKMath-cpp/GLKMath-cpp-Prefix.pch";
 				INFOPLIST_FILE = "GLKMath-cpp/GLKMath-cpp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
