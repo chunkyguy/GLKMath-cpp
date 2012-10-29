@@ -21,8 +21,6 @@
 		196F29DB163A16470007D92B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 196F29DA163A16470007D92B /* Shader.fsh */; };
 		196F29DD163A16470007D92B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 196F29DC163A16470007D92B /* Shader.vsh */; };
 		196F29E0163A16470007D92B /* WLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F29DF163A16470007D92B /* WLViewController.m */; };
-		196F29E3163A16470007D92B /* WLViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196F29E1163A16470007D92B /* WLViewController_iPhone.xib */; };
-		196F29E6163A16470007D92B /* WLViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196F29E4163A16470007D92B /* WLViewController_iPad.xib */; };
 		196F29EE163A16480007D92B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29ED163A16480007D92B /* SenTestingKit.framework */; };
 		196F29EF163A16480007D92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29BE163A16470007D92B /* UIKit.framework */; };
 		196F29F0163A16480007D92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C0163A16470007D92B /* Foundation.framework */; };
@@ -60,8 +58,6 @@
 		196F29DC163A16470007D92B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		196F29DE163A16470007D92B /* WLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLViewController.h; sourceTree = "<group>"; };
 		196F29DF163A16470007D92B /* WLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLViewController.m; sourceTree = "<group>"; };
-		196F29E2163A16470007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLViewController_iPhone.xib; sourceTree = "<group>"; };
-		196F29E5163A16470007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLViewController_iPad.xib; sourceTree = "<group>"; };
 		196F29EC163A16480007D92B /* GLKMath-cppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLKMath-cppTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		196F29ED163A16480007D92B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		196F29F5163A16480007D92B /* GLKMath-cppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKMath-cppTests-Info.plist"; sourceTree = "<group>"; };
@@ -137,8 +133,6 @@
 				196F29DC163A16470007D92B /* Shader.vsh */,
 				196F29DE163A16470007D92B /* WLViewController.h */,
 				196F29DF163A16470007D92B /* WLViewController.m */,
-				196F29E1163A16470007D92B /* WLViewController_iPhone.xib */,
-				196F29E4163A16470007D92B /* WLViewController_iPad.xib */,
 				196F29C9163A16470007D92B /* Supporting Files */,
 			);
 			path = "GLKMath-cpp";
@@ -255,8 +249,6 @@
 				196F29D9163A16470007D92B /* Default-568h@2x.png in Resources */,
 				196F29DB163A16470007D92B /* Shader.fsh in Resources */,
 				196F29DD163A16470007D92B /* Shader.vsh in Resources */,
-				196F29E3163A16470007D92B /* WLViewController_iPhone.xib in Resources */,
-				196F29E6163A16470007D92B /* WLViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,22 +314,6 @@
 				196F29CC163A16470007D92B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		196F29E1163A16470007D92B /* WLViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				196F29E2163A16470007D92B /* en */,
-			);
-			name = WLViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		196F29E4163A16470007D92B /* WLViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				196F29E5163A16470007D92B /* en */,
-			);
-			name = WLViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		196F29F6163A16480007D92B /* InfoPlist.strings */ = {
