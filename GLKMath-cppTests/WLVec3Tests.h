@@ -1,5 +1,5 @@
 //
-//  WLVec2Tests.h
+//  WLVec3Tests.h
 //  GLKMath-cpp
 //
 //  Created by McLovin on 30/10/12.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface WLVec2Tests : SenTestCase
+@interface WLVec3Tests : SenTestCase
 
 @end

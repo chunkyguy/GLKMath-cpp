@@ -7,6 +7,7 @@
 //
 
 #import "WLVec2Tests.h"
+#import "vec2.h"
 
 @implementation WLVec2Tests
 - (void)setUp{

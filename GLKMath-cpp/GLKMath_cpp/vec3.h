@@ -17,7 +17,7 @@ namespace glkm {
     public:
         vec3() : v(GLKVector3Make(0.0, 0.0, 0.0)) {}
         vec3(float inXYZ) : v(GLKVector3Make(inXYZ, inXYZ, inXYZ)){}
-        vec3(float inX, float inY, inZ) : v(GLKVector3Make(inX, inY, inZ)){}
+        vec3(float inX, float inY, float inZ) : v(GLKVector3Make(inX, inY, inZ)){}
         vec3(float array[3]) : v(GLKVector3MakeWithArray(array)) {}
         
         vec3 &operator-(){v = GLKVector3Negate(v);return *this;};
