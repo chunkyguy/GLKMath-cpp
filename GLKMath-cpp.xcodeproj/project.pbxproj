@@ -26,8 +26,6 @@
 		196F29FB163A16480007D92B /* GLKMath_cppTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 196F29FA163A16480007D92B /* GLKMath_cppTests.mm */; };
 		6586CA3E163F476100938628 /* WLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3D163F476100938628 /* WLViewController.mm */; };
 		6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3F163F476B00938628 /* WLAppDelegate.mm */; };
-		6586CA44163F493300938628 /* vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA42163F493300938628 /* vec2.cpp */; };
-		6586CA45163F4A1800938628 /* vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA42163F493300938628 /* vec2.cpp */; };
 		659287CB163FCF4600465C62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 659287CA163FCF4600465C62 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +65,6 @@
 		196F29FA163A16480007D92B /* GLKMath_cppTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLKMath_cppTests.mm; sourceTree = "<group>"; };
 		6586CA3D163F476100938628 /* WLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLViewController.mm; sourceTree = "<group>"; };
 		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
-		6586CA42163F493300938628 /* vec2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec2.cpp; sourceTree = "<group>"; };
 		6586CA43163F493300938628 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
 		659287CA163FCF4600465C62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +179,6 @@
 		6586CA41163F48BC00938628 /* GLKMath_cpp */ = {
 			isa = PBXGroup;
 			children = (
-				6586CA42163F493300938628 /* vec2.cpp */,
 				6586CA43163F493300938628 /* vec2.h */,
 			);
 			path = GLKMath_cpp;
@@ -304,7 +300,6 @@
 				196F29CF163A16470007D92B /* main.m in Sources */,
 				6586CA3E163F476100938628 /* WLViewController.mm in Sources */,
 				6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */,
-				6586CA44163F493300938628 /* vec2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6586CA45163F4A1800938628 /* vec2.cpp in Sources */,
 				196F29FB163A16480007D92B /* GLKMath_cppTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
