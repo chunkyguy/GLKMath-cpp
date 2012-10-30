@@ -36,18 +36,25 @@
 
 -(void)testVec2Add{
     STAssertTrue(*v2_1 + vec2(1.0, 11.0) == *v2_2, @"vec2: Add vectors fail");
+    STAssertTrue(*v2_1 + 0.0 == *v2_1, @"vec2: Add scalar 1 fail");
+    STAssertTrue(0.0 + *v2_2 == *v2_2, @"vec2: Add scalar 2 fail");
 }
 
 -(void)testVec2Sub{
     STAssertTrue(*v2_1 == *v2_2 - vec2(1.0, 11.0), @"vec2: Sub vectors fail");
+    STAssertTrue(*v2_1 - 0.0 == *v2_1, @"vec2: Sub scalar 1 fail");
+    STAssertTrue(0.0 - *v2_2 == -(*v2_2), @"vec2: Sub scalar 2 fail");
 }
 
 -(void)testVec2Mul{
     STAssertTrue(*v2_0 * *v2_2 == *v2_0, @"vec2: Mul vectors fail");
+    STAssertTrue(vec2(10.0, 10.0) * 2.0 == vec2(20.0, 20.0), @"vec2: Mul scalar 1 fail");
+    STAssertTrue(2.0 * vec2(10.0, 10.0) == vec2(20.0, 20.0), @"vec2: Mul scalar 2 fail");
 }
 
 -(void)testVec2Div{
     STAssertTrue(*v2_1 / vec2(1.0, 1.0) == *v2_1, @"vec2: Div vectors fail");
+    STAssertTrue(vec2(10.0, 10.0)/5.0 == vec2(2.0, 2.0), @"vec2: Div scalar fail");
 }
 
 @end

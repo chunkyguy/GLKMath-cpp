@@ -27,6 +27,7 @@ public:
     
     friend vec2 operator*(const vec2 &, const vec2 &);
     friend vec2 operator*(const vec2 &, float x);
+    friend vec2 operator*(float x, const vec2 &);
     
     friend vec2 operator/(const vec2 &, const vec2 &);
     friend vec2 operator/(const vec2 &, float x);

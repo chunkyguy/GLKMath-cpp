@@ -32,6 +32,9 @@ vec2 operator*(const vec2 &a, const vec2 &b){
 vec2 operator*(const vec2 &a, float x){
     return GLKVector2MultiplyScalar(a.v, x);
 }
+vec2 operator*(float x, const vec2 &a){
+    return GLKVector2MultiplyScalar(a.v, x);
+}
 
 vec2 operator/(const vec2 &a, const vec2 &b){
     return GLKVector2Divide(a.v, b.v);
