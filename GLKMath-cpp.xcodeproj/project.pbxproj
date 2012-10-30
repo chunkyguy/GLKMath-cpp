@@ -28,6 +28,7 @@
 		6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3F163F476B00938628 /* WLAppDelegate.mm */; };
 		6586CA44163F493300938628 /* vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA42163F493300938628 /* vec2.cpp */; };
 		6586CA45163F4A1800938628 /* vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA42163F493300938628 /* vec2.cpp */; };
+		659287CB163FCF4600465C62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 659287CA163FCF4600465C62 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 		6586CA42163F493300938628 /* vec2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec2.cpp; sourceTree = "<group>"; };
 		6586CA43163F493300938628 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
+		659287CA163FCF4600465C62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		196F29AF163A16470007D92B = {
 			isa = PBXGroup;
 			children = (
+				659287CA163FCF4600465C62 /* README.md */,
 				196F29C8163A16470007D92B /* GLKMath-cpp */,
 				196F29F3163A16480007D92B /* GLKMath-cppTests */,
 				196F29BD163A16470007D92B /* Frameworks */,
@@ -263,6 +266,7 @@
 				196F29D9163A16470007D92B /* Default-568h@2x.png in Resources */,
 				196F29DB163A16470007D92B /* Shader.fsh in Resources */,
 				196F29DD163A16470007D92B /* Shader.vsh in Resources */,
+				659287CB163FCF4600465C62 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
