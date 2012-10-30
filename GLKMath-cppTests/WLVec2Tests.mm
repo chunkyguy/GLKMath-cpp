@@ -1,14 +1,14 @@
 //
-//  GLKMath_cppTests.m
-//  GLKMath-cppTests
+//  WLVec2Tests.m
+//  GLKMath-cpp
 //
-//  Created by Sid on 26/10/12.
+//  Created by McLovin on 30/10/12.
 //  Copyright (c) 2012 whackylabs. All rights reserved.
 //
 
-#import "GLKMath_cppTests.h"
+#import "WLVec2Tests.h"
 
-@implementation GLKMath_cppTests
+@implementation WLVec2Tests
 - (void)setUp{
     [super setUp];
 }

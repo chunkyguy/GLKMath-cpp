@@ -23,7 +23,7 @@
 		196F29EF163A16480007D92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29BE163A16470007D92B /* UIKit.framework */; };
 		196F29F0163A16480007D92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C0163A16470007D92B /* Foundation.framework */; };
 		196F29F8163A16480007D92B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196F29F6163A16480007D92B /* InfoPlist.strings */; };
-		196F29FB163A16480007D92B /* GLKMath_cppTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 196F29FA163A16480007D92B /* GLKMath_cppTests.mm */; };
+		6563D3A4163FF4DB007FA3DB /* WLVec2Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */; };
 		6586CA3E163F476100938628 /* WLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3D163F476100938628 /* WLViewController.mm */; };
 		6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3F163F476B00938628 /* WLAppDelegate.mm */; };
 		659287CB163FCF4600465C62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 659287CA163FCF4600465C62 /* README.md */; };
@@ -61,9 +61,9 @@
 		196F29ED163A16480007D92B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		196F29F5163A16480007D92B /* GLKMath-cppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKMath-cppTests-Info.plist"; sourceTree = "<group>"; };
 		196F29F7163A16480007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		196F29F9163A16480007D92B /* GLKMath_cppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKMath_cppTests.h; sourceTree = "<group>"; };
-		196F29FA163A16480007D92B /* GLKMath_cppTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLKMath_cppTests.mm; sourceTree = "<group>"; };
 		6563D39F163FF2EC007FA3DB /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
+		6563D3A0163FF482007FA3DB /* WLVec2Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLVec2Tests.h; sourceTree = "<group>"; };
+		6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLVec2Tests.mm; sourceTree = "<group>"; };
 		6586CA3D163F476100938628 /* WLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLViewController.mm; sourceTree = "<group>"; };
 		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 		6586CA43163F493300938628 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 		196F29F3163A16480007D92B /* GLKMath-cppTests */ = {
 			isa = PBXGroup;
 			children = (
-				196F29F9163A16480007D92B /* GLKMath_cppTests.h */,
-				196F29FA163A16480007D92B /* GLKMath_cppTests.mm */,
+				6563D3A0163FF482007FA3DB /* WLVec2Tests.h */,
+				6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */,
 				196F29F4163A16480007D92B /* Supporting Files */,
 			);
 			path = "GLKMath-cppTests";
@@ -309,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				196F29FB163A16480007D92B /* GLKMath_cppTests.mm in Sources */,
+				6563D3A4163FF4DB007FA3DB /* WLVec2Tests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
