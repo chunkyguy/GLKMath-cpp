@@ -9,9 +9,5 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "vec2.h"
 
-@interface GLKMath_cppTests : SenTestCase{
-    glkm::vec2 *v2_0;
-    glkm::vec2 *v2_1;
-    glkm::vec2 *v2_2;
-}
+@interface GLKMath_cppTests : SenTestCase
 @end
