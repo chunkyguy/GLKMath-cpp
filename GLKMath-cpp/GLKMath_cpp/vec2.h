@@ -8,15 +8,32 @@
 
 #ifndef __GLKMath_cpp__vec2__
 #define __GLKMath_cpp__vec2__
+#include <iostream>
+#include <GLKit/GLKMath.h>
+
 class vec2{
 public:
-    //GLKVector2Make
-    vec2(float inX = 0.0, float inY = 0.0) : x(inX), y(inY) {}
+    vec2(float inX = 0.0, float inY = 0.0) : v(GLKVector2Make(inX, inY)){}
+    vec2(float array[2]) : v(GLKVector2MakeWithArray(array)) {}
+    vec2 &operator-(){
+        v = GLKVector2Negate(v);
+        return *this;
+    };
+    friend vec2 operator+(const vec2 &, const vec2 &);
+    friend vec2 operator+(const vec2 &, float x);
     
-    bool operator==(const vec2 &v){ return (v.x == x) && (v.y == y);}
+    friend vec2 operator-(const vec2 &, const vec2 &);
+    friend vec2 operator-(const vec2 &, float x);
     
+    friend vec2 operator*(const vec2 &, const vec2 &);
+    friend vec2 operator*(const vec2 &, float x);
+    
+    friend vec2 operator/(const vec2 &, const vec2 &);
+    friend vec2 operator/(const vec2 &, float x);
+    
+    friend bool operator==(const vec2 &, const vec2 &);
 private:
-    float x, y;
+    vec2(GLKVector2 inV) : v(inV){}
+    GLKVector2 v;
 };
-
 #endif /* defined(__GLKMath_cpp__vec2__) */
