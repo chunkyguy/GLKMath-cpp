@@ -63,6 +63,7 @@
 		196F29F7163A16480007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		196F29F9163A16480007D92B /* GLKMath_cppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKMath_cppTests.h; sourceTree = "<group>"; };
 		196F29FA163A16480007D92B /* GLKMath_cppTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLKMath_cppTests.mm; sourceTree = "<group>"; };
+		6563D39F163FF2EC007FA3DB /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
 		6586CA3D163F476100938628 /* WLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLViewController.mm; sourceTree = "<group>"; };
 		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 		6586CA43163F493300938628 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				6586CA43163F493300938628 /* vec2.h */,
+				6563D39F163FF2EC007FA3DB /* vec3.h */,
 			);
 			path = GLKMath_cpp;
 			sourceTree = "<group>";
