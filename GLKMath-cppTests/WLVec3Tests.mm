@@ -115,6 +115,13 @@
     STAssertTrue(dot(a, b) == 600.0, @"vec3: Dot fail");
 }
 
+-(void)testvec3Cross{
+    glkm::vec3 a(10, 20, 30);
+    glkm::vec3 b(40, 50, 60);
+	glkm::vec3 c(-300,600,-300);
+	STAssertTrue(cross(a,b) == c, @"vec3: Cross fail");
+}
+
 -(void)testvec3Length{
     glkm::vec3 a(10, 20, 30);
     // = 10*√14
@@ -137,4 +144,5 @@
     std::cout << "a.project(b): " << a << std::endl;
     STAssertTrue(a == c, @"vec3: projection failed");
 }
+
 @end

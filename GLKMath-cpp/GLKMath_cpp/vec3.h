@@ -46,7 +46,9 @@ namespace glkm {
         
         void normalize(){v = GLKVector3Normalize(v);}
         
-        friend float dot(const vec3 &a, const vec3 &b){return GLKVector3DotProduct(a.v, b.v);};
+        friend float dot(const vec3 &a, const vec3 &b){return GLKVector3DotProduct(a.v, b.v);}
+		
+		friend vec3 cross(const vec3 &a, const vec3 &b){return GLKVector3CrossProduct(a.v, b.v);}
         
         float length(){return GLKVector3Length(v);}
         
