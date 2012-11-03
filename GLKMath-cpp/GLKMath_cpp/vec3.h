@@ -58,7 +58,7 @@ namespace glkm {
         
         void project(const vec3 &projection){v = GLKVector3Project(v, projection.v);}
         
-        friend std::ostream &operator<<(std::ostream &os, const vec3 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "}";return os;}
+        friend std::ostream &operator<<(std::ostream &os, const vec3 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "," << vec.v.z << "}";return os;}
             
         private:
             vec3(GLKVector3 inV) : v(inV){}

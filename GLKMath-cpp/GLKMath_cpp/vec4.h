@@ -35,11 +35,11 @@ namespace glkm {
         friend vec4 operator/(const vec4 &a, const vec4 &b){return GLKVector4Divide(a.v, b.v);}
         friend vec4 operator/(const vec4 &a, float x){return GLKVector4DivideScalar(a.v, x);}
         
-        friend bool operator>(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanVector3(a.v, b.v);}
-        friend bool operator>=(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanOrEqualToVector3(a.v, b.v);}
-        friend bool operator<(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanVector3(b.v, a.v);}
-        friend bool operator<=(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanOrEqualToVector3(b.v, a.v);}
-        friend bool operator==(const vec4 &a, const vec4 &b){return GLKVector4AllEqualToVector3(a.v, b.v);}
+        friend bool operator>(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanVector4(a.v, b.v);}
+        friend bool operator>=(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanOrEqualToVector4(a.v, b.v);}
+        friend bool operator<(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanVector4(b.v, a.v);}
+        friend bool operator<=(const vec4 &a, const vec4 &b){return GLKVector4AllGreaterThanOrEqualToVector4(b.v, a.v);}
+        friend bool operator==(const vec4 &a, const vec4 &b){return GLKVector4AllEqualToVector4(a.v, b.v);}
         
         friend vec4 max(const vec4 &a, const vec4 &b){return GLKVector4Maximum(a.v, b.v);}
         friend vec4 min(const vec4 &a, const vec4 &b){return GLKVector4Minimum(a.v, b.v);}
@@ -58,7 +58,7 @@ namespace glkm {
         
         void project(const vec4 &projection){v = GLKVector4Project(v, projection.v);}
         
-        friend std::ostream &operator<<(std::ostream &os, const vec4 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "}";return os;}
+        friend std::ostream &operator<<(std::ostream &os, const vec4 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "," << vec.v.z << "," << vec.v.w << "}";return os;}
             
         private:
             vec4(GLKVector4 inV) : v(inV){}
