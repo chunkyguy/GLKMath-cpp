@@ -71,6 +71,7 @@
 		6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLVec2Tests.mm; sourceTree = "<group>"; };
 		6563D3A5163FF536007FA3DB /* WLVec3Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLVec3Tests.h; sourceTree = "<group>"; };
 		6563D3A8163FF555007FA3DB /* WLVec3Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLVec3Tests.mm; sourceTree = "<group>"; };
+		656641261644B44C002F2C30 /* mat3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mat3.h; sourceTree = "<group>"; };
 		6586CA3D163F476100938628 /* WLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLViewController.mm; sourceTree = "<group>"; };
 		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 		6586CA43163F493300938628 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
@@ -194,6 +195,7 @@
 				6586CA43163F493300938628 /* vec2.h */,
 				6563D39F163FF2EC007FA3DB /* vec3.h */,
 				19A284DF16449C3800F97431 /* vec4.h */,
+				656641261644B44C002F2C30 /* mat3.h */,
 			);
 			path = GLKMath_cpp;
 			sourceTree = "<group>";
