@@ -59,7 +59,7 @@ namespace glkm {
         
         void project(const vec4 &projection){v = GLKVector4Project(v, projection.v);}
         
-        operator GLKVector4() {return v;}
+        operator GLKVector4() const {return v;}
         
         friend std::ostream &operator<<(std::ostream &os, const vec4 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "," << vec.v.z << "," << vec.v.w << "}";return os;}
             
