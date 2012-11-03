@@ -15,7 +15,9 @@ namespace glkm {
     
     class vec3{
     public:
+
         vec3() : v(GLKVector3Make(0.0, 0.0, 0.0)) {}
+        vec3(GLKVector3 inV) : v(inV){}
         vec3(float inXYZ) : v(GLKVector3Make(inXYZ, inXYZ, inXYZ)){}
         vec3(float inX, float inY, float inZ) : v(GLKVector3Make(inX, inY, inZ)){}
         vec3(float array[3]) : v(GLKVector3MakeWithArray(array)) {}
@@ -58,10 +60,11 @@ namespace glkm {
         
         void project(const vec3 &projection){v = GLKVector3Project(v, projection.v);}
         
+        operator GLKVector3() {return v;}
+        
         friend std::ostream &operator<<(std::ostream &os, const vec3 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "," << vec.v.z << "}";return os;}
             
         private:
-            vec3(GLKVector3 inV) : v(inV){}
             GLKVector3 v;
     };
 }

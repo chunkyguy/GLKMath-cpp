@@ -16,6 +16,7 @@ namespace glkm {
     class vec4{
     public:
         vec4() : v(GLKVector4Make(0.0, 0.0, 0.0, 0.0)) {}
+        vec4(GLKVector4 inV) : v(inV){}
         vec4(float inXYZW) : v(GLKVector4Make(inXYZW, inXYZW, inXYZW, inXYZW)){}
         vec4(float inX, float inY, float inZ, float inW) : v(GLKVector4Make(inX, inY, inZ, inW)){}
         vec4(float array[4]) : v(GLKVector4MakeWithArray(array)) {}
@@ -58,10 +59,11 @@ namespace glkm {
         
         void project(const vec4 &projection){v = GLKVector4Project(v, projection.v);}
         
+        operator GLKVector4() {return v;}
+        
         friend std::ostream &operator<<(std::ostream &os, const vec4 &vec){os  << "{" << vec.v.x << "," << vec.v.y << "," << vec.v.z << "," << vec.v.w << "}";return os;}
             
         private:
-            vec4(GLKVector4 inV) : v(inV){}
             GLKVector4 v;
 	};
 }

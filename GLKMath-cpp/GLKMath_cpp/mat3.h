@@ -10,6 +10,8 @@
 #define GLKMath_cpp_mat3_h
 #include <iostream>
 #include <GLKit/GLKMatrix3.h>
+#include "mat2.h"
+#include "vec3.h"
 
 namespace glkm {
     class mat3 {
@@ -57,6 +59,22 @@ namespace glkm {
 
         mat3 makeZRotation(float radians){
             return GLKMatrix3MakeZRotation(radians);
+        }
+        
+        operator mat2(){
+            return GLKMatrix3GetMatrix2(mat_);
+        }
+        
+        vec3 getRow(int r){
+            return GLKMatrix3GetRow(mat_, r);
+        }
+        
+        vec3 getColumn(int c){
+            return GLKMatrix3GetColumn(mat_, c);
+        }
+        
+        void setRow(int r, vec3 v){
+            mat_ = GLKMatrix3SetRow(mat_, r, v);
         }
 
     private:

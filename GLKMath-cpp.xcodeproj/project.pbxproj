@@ -79,6 +79,8 @@
 		659287CA163FCF4600465C62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		65E046D1164530B7001377E1 /* WLMat3Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMat3Tests.h; sourceTree = "<group>"; };
 		65E046D2164530B7001377E1 /* WLMat3Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLMat3Tests.mm; sourceTree = "<group>"; };
+		65E046D516453632001377E1 /* mat2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mat2.h; sourceTree = "<group>"; };
+		65E046D6164538D4001377E1 /* glkm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glkm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,9 +199,11 @@
 		6586CA41163F48BC00938628 /* GLKMath_cpp */ = {
 			isa = PBXGroup;
 			children = (
+				65E046D6164538D4001377E1 /* glkm.h */,
 				6586CA43163F493300938628 /* vec2.h */,
 				6563D39F163FF2EC007FA3DB /* vec3.h */,
 				19A284DF16449C3800F97431 /* vec4.h */,
+				65E046D516453632001377E1 /* mat2.h */,
 				656641261644B44C002F2C30 /* mat3.h */,
 			);
 			path = GLKMath_cpp;
