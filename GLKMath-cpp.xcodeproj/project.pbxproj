@@ -23,6 +23,7 @@
 		196F29EF163A16480007D92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29BE163A16470007D92B /* UIKit.framework */; };
 		196F29F0163A16480007D92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F29C0163A16470007D92B /* Foundation.framework */; };
 		196F29F8163A16480007D92B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 196F29F6163A16480007D92B /* InfoPlist.strings */; };
+		19A284E316449DCA00F97431 /* WLVec4Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19A284E216449DCA00F97431 /* WLVec4Tests.mm */; };
 		6563D3A4163FF4DB007FA3DB /* WLVec2Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */; };
 		6563D3A9163FF555007FA3DB /* WLVec3Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6563D3A8163FF555007FA3DB /* WLVec3Tests.mm */; };
 		6586CA3E163F476100938628 /* WLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3D163F476100938628 /* WLViewController.mm */; };
@@ -62,6 +63,9 @@
 		196F29ED163A16480007D92B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		196F29F5163A16480007D92B /* GLKMath-cppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKMath-cppTests-Info.plist"; sourceTree = "<group>"; };
 		196F29F7163A16480007D92B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19A284DF16449C3800F97431 /* vec4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec4.h; sourceTree = "<group>"; };
+		19A284E116449DCA00F97431 /* WLVec4Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLVec4Tests.h; sourceTree = "<group>"; };
+		19A284E216449DCA00F97431 /* WLVec4Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLVec4Tests.mm; sourceTree = "<group>"; };
 		6563D39F163FF2EC007FA3DB /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
 		6563D3A0163FF482007FA3DB /* WLVec2Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLVec2Tests.h; sourceTree = "<group>"; };
 		6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLVec2Tests.mm; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				6563D3A3163FF4DB007FA3DB /* WLVec2Tests.mm */,
 				6563D3A5163FF536007FA3DB /* WLVec3Tests.h */,
 				6563D3A8163FF555007FA3DB /* WLVec3Tests.mm */,
+				19A284E116449DCA00F97431 /* WLVec4Tests.h */,
+				19A284E216449DCA00F97431 /* WLVec4Tests.mm */,
 				196F29F4163A16480007D92B /* Supporting Files */,
 			);
 			path = "GLKMath-cppTests";
@@ -187,6 +193,7 @@
 			children = (
 				6586CA43163F493300938628 /* vec2.h */,
 				6563D39F163FF2EC007FA3DB /* vec3.h */,
+				19A284DF16449C3800F97431 /* vec4.h */,
 			);
 			path = GLKMath_cpp;
 			sourceTree = "<group>";
@@ -316,6 +323,7 @@
 			files = (
 				6563D3A4163FF4DB007FA3DB /* WLVec2Tests.mm in Sources */,
 				6563D3A9163FF555007FA3DB /* WLVec3Tests.mm in Sources */,
+				19A284E316449DCA00F97431 /* WLVec4Tests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
