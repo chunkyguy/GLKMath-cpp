@@ -29,6 +29,7 @@
 		6586CA3E163F476100938628 /* WLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3D163F476100938628 /* WLViewController.mm */; };
 		6586CA40163F476B00938628 /* WLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6586CA3F163F476B00938628 /* WLAppDelegate.mm */; };
 		659287CB163FCF4600465C62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 659287CA163FCF4600465C62 /* README.md */; };
+		65E046D3164530B7001377E1 /* WLMat3Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65E046D2164530B7001377E1 /* WLMat3Tests.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		6586CA3F163F476B00938628 /* WLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLAppDelegate.mm; sourceTree = "<group>"; };
 		6586CA43163F493300938628 /* vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2.h; sourceTree = "<group>"; };
 		659287CA163FCF4600465C62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		65E046D1164530B7001377E1 /* WLMat3Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMat3Tests.h; sourceTree = "<group>"; };
+		65E046D2164530B7001377E1 /* WLMat3Tests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WLMat3Tests.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				6563D3A8163FF555007FA3DB /* WLVec3Tests.mm */,
 				19A284E116449DCA00F97431 /* WLVec4Tests.h */,
 				19A284E216449DCA00F97431 /* WLVec4Tests.mm */,
+				65E046D1164530B7001377E1 /* WLMat3Tests.h */,
+				65E046D2164530B7001377E1 /* WLMat3Tests.mm */,
 				196F29F4163A16480007D92B /* Supporting Files */,
 			);
 			path = "GLKMath-cppTests";
@@ -326,6 +331,7 @@
 				6563D3A4163FF4DB007FA3DB /* WLVec2Tests.mm in Sources */,
 				6563D3A9163FF555007FA3DB /* WLVec3Tests.mm in Sources */,
 				19A284E316449DCA00F97431 /* WLVec4Tests.mm in Sources */,
+				65E046D3164530B7001377E1 /* WLMat3Tests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
