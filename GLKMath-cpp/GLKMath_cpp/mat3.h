@@ -21,84 +21,56 @@ namespace glkm {
         
         mat3(const GLKMatrix3 &m) : mat_(m){}
         
-        mat3(float m00, float m01, float m02,float m10, float m11, float m12,float m20, float m21, float m22) :
-        mat_(GLKMatrix3Make(m00, m01, m02, m10,  m11,  m12, m20,  m21,  m22)){}
+        mat3(float m00, float m01, float m02,float m10, float m11, float m12,float m20, float m21, float m22, bool transpose = false){
+            mat_ = (transpose)?GLKMatrix3MakeAndTranspose( m00, m01, m02, m10, m11, m12, m20, m21, m22):GLKMatrix3Make(m00, m01, m02, m10,  m11,  m12, m20,  m21,  m22);
+        }
         
-        mat3(float values[9]) : mat_(GLKMatrix3MakeWithArray(values)){}
+        mat3(float values[9], bool transpose = false){
+            mat_ = (transpose)?GLKMatrix3MakeWithArrayAndTranspose(values):GLKMatrix3MakeWithArray(values);
+        }
         
         mat3(GLKQuaternion q) : mat_(GLKMatrix3MakeWithQuaternion(q)) {}
         
-        mat3 makeWithRows(GLKVector3 r0, GLKVector3 r1, GLKVector3 r2){
-            return GLKMatrix3MakeWithRows(r0, r1, r2);
+        enum ROW_COL {ROW, COLUMN};
+        mat3(GLKVector3 r0, GLKVector3 r1, GLKVector3 r2, ROW_COL r = ROW){
+            mat_ = (r == ROW)? GLKMatrix3MakeWithRows(r0, r1, r2) : GLKMatrix3MakeWithColumns(r0, r1, r2);
         }
 
-        mat3 makeWithColumns(GLKVector3 r0, GLKVector3 r1, GLKVector3 r2){
-            return GLKMatrix3MakeWithColumns(r0, r1, r2);
-        }
+                
+        mat3(float sx, float sy, float sz) : mat_(GLKMatrix3MakeScale(sx, sy, sz)){}
         
-        mat3 makeTranspose(float m00, float m01, float m02,float m10, float m11, float m12,float m20, float m21, float m22){
-            return GLKMatrix3MakeAndTranspose( m00, m01, m02, m10, m11, m12, m20, m21, m22);
-        }
+        mat3(float radians, float x, float y, float z) : mat_(GLKMatrix3MakeRotation(radians, x, y, z)){}
         
-        mat3 makeTranspose(float values[9]){
-            return GLKMatrix3MakeWithArrayAndTranspose(values);
-        }
-        
-        mat3 makeScale(float x, float y, float z){
-            return GLKMatrix3MakeScale(x, y, z);
-        }
-        
-        mat3 makeRotate(float radians, float x, float y, float z){
-            return GLKMatrix3MakeRotation(radians, x, y, z);
-        }
-        
-        mat3 makeXRotation(float radians){
-            return GLKMatrix3MakeXRotation(radians);
-        }
-
-        mat3 makeYRotation(float radians){
-            return GLKMatrix3MakeYRotation(radians);
-        }
-
-        mat3 makeZRotation(float radians){
-            return GLKMatrix3MakeZRotation(radians);
+        enum ROTATION_AXIS{X, Y, Z};
+        mat3(float radians, ROTATION_AXIS r){
+            switch (r) {
+                case X: mat_ = GLKMatrix3MakeXRotation(radians); break;
+                case Y: mat_ = GLKMatrix3MakeYRotation(radians); break;
+                case Z: mat_ = GLKMatrix3MakeZRotation(radians); break;
+            }
         }
         
         operator mat2(){
             return GLKMatrix3GetMatrix2(mat_);
         }
         
-        vec3 getRow(int r){
-            return GLKMatrix3GetRow(mat_, r);
+        vec3 get(int i, ROW_COL r){
+            if(r == ROW)
+                return GLKMatrix3GetRow(mat_, i);
+            return GLKMatrix3GetColumn(mat_, i);
         }
         
-        vec3 getColumn(int c){
-            return GLKMatrix3GetColumn(mat_, c);
-        }
-        
-        void setRow(int r,const vec3 &v){
-            mat_ = GLKMatrix3SetRow(mat_, r, v);
-        }
-
-        void setColumn(int c, const vec3 &v){
-            mat_ = GLKMatrix3SetColumn(mat_, c, v);
+        void set(int i,const vec3 &v, ROW_COL r){
+            mat_ = (r == ROW) ? GLKMatrix3SetRow(mat_, r, v) : GLKMatrix3SetColumn(mat_, i, v);
         }
         
         void transpose(){
             mat_ = GLKMatrix3Transpose(mat_);
         }
         
-        bool invert(){
+        bool invert(bool transpose){
             bool success;
-            GLKMatrix3 i = GLKMatrix3Invert(mat_, &success);
-            if(success)
-                mat_ = i;
-            return success;
-        }
-        
-        bool invertAndTranspose(){
-            bool success;
-            GLKMatrix3 i = GLKMatrix3InvertAndTranspose(mat_, &success);
+            GLKMatrix3 i = (transpose) ? GLKMatrix3InvertAndTranspose(mat_, &success) : GLKMatrix3Invert(mat_, &success);
             if(success)
                 mat_ = i;
             return success;
@@ -140,16 +112,12 @@ namespace glkm {
             mat_ = GLKMatrix3RotateWithVector4(mat_, radians, v);
         }
         
-        void rotateX(float radians){
-            mat_ = GLKMatrix3RotateX(mat_, radians);
-        }
-
-        void rotateY(float radians){
-            mat_ = GLKMatrix3RotateY(mat_, radians);
-        }
-        
-        void rotateZ(float radians){
-            mat_ = GLKMatrix3RotateZ(mat_, radians);
+        void rotate(float radians, ROTATION_AXIS r){
+            switch(r){
+                case X: mat_ = GLKMatrix3RotateX(mat_, radians); break;
+                case Y: mat_ = GLKMatrix3RotateY(mat_, radians); break;
+                case Z: mat_ = GLKMatrix3RotateZ(mat_, radians); break;
+            }
         }
 
         friend vec3 operator*(const mat3 &m, const vec3 &v){
