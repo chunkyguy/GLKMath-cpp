@@ -8,6 +8,7 @@
 
 #ifndef GLKMath_cpp_glkm_h
 #define GLKMath_cpp_glkm_h
+#include "glkm_types.h"
 #include "vec2.h"
 #include "vec3.h"
 #include "vec4.h"

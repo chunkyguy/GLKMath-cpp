@@ -10,6 +10,7 @@
 #define GLKMath_cpp_mat4_h
 #include <iostream>
 #include <GLKit/GLKMatrix4.h>
+#include "glkm_types.h"
 #include "mat3.h"
 #include "vec3.h"
 #include "vec4.h"
@@ -48,7 +49,6 @@ namespace glkm {
         
         mat4(GLKQuaternion q) : mat_(GLKMatrix4MakeWithQuaternion(q)) {}
         
-        enum ROW_COL {ROW, COLUMN};
         mat4(GLKVector4 r0, GLKVector4 r1, GLKVector4 r2, GLKVector4 r3, ROW_COL r = ROW){
             if(r == ROW)
                 mat_ = GLKMatrix4MakeWithRows(r0, r1, r2, r3);
@@ -65,7 +65,6 @@ namespace glkm {
         
         mat4(float radians, float x, float y, float z) : mat_(GLKMatrix4MakeRotation(radians, x, y, z)){}
 
-        enum ROTATION_AXIS{X, Y, Z};
         mat4(float radians, ROTATION_AXIS r){
             switch(r){
                 case X: mat_ = GLKMatrix4MakeXRotation(radians); break;

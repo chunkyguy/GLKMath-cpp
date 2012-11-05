@@ -10,6 +10,7 @@
 #define GLKMath_cpp_mat3_h
 #include <iostream>
 #include <GLKit/GLKMatrix3.h>
+#include "glkm_types.h"
 #include "mat2.h"
 #include "vec3.h"
 #include "vec4.h"
@@ -31,7 +32,7 @@ namespace glkm {
         
         mat3(GLKQuaternion q) : mat_(GLKMatrix3MakeWithQuaternion(q)) {}
         
-        enum ROW_COL {ROW, COLUMN};
+
         mat3(GLKVector3 r0, GLKVector3 r1, GLKVector3 r2, ROW_COL r = ROW){
             mat_ = (r == ROW)? GLKMatrix3MakeWithRows(r0, r1, r2) : GLKMatrix3MakeWithColumns(r0, r1, r2);
         }
@@ -41,7 +42,6 @@ namespace glkm {
         
         mat3(float radians, float x, float y, float z) : mat_(GLKMatrix3MakeRotation(radians, x, y, z)){}
         
-        enum ROTATION_AXIS{X, Y, Z};
         mat3(float radians, ROTATION_AXIS r){
             switch (r) {
                 case X: mat_ = GLKMatrix3MakeXRotation(radians); break;
